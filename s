@@ -141,5 +141,11 @@ local Slither = Trolling:CreateButton({
 	end,
 })
 
+local Serverlist = Trolling:CreateButton({
+   Name = "Serverlist",
+   Callback = function()
+	loadstring(game:HttpGet("https://github.com/euronetic/b/blob/main/serverlist",true))()
+	end,
+})
 
 RayField:LoadConfiguration()
