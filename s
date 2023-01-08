@@ -114,27 +114,13 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
    end,
 })
 
-local Spam = Main:CreateToggle({
-   Name = "Spam Emojis",
-   CurrentValue = false,
-   Flag = "Spam", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Value)
-   Spam:Set(false)
-   if Spam == false then
-   Spam:Set(true)
-   while true do
-   
-   wait(1)
-   local A_1 = "😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿👿👿😈👿😈😈😈😈😈👿😈😈"
-   local A_2 = "All"
-   local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-   Event:FireServer(A_1, A_2)
-   end
-   end
-   if Spam == true then
-   Spam = false
-   end
-   end,
+local Idle = Main:CreateButton({
+   Name = "Anti-Idle",
+   Callback = function()
+   for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled))do
+	v:Disable()
+	end
+	end,
 })
 
 
