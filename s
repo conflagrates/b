@@ -123,7 +123,10 @@ local Idle = Main:CreateButton({
 	end,
 })
 
-local Bypass = Main:CreateButton({
+local Trolling = Window:CreateTab("Trolling")
+local TrollArea = Trolling:CreateSection("Trollpage")
+
+local Bypass = Trolling:CreateButton({
    Name = "Chat Bypasser (Q)",
    Callback = function()
  	 _G.Keybind = 'Q'
@@ -131,7 +134,11 @@ local Bypass = Main:CreateButton({
 	end,
 })
 
-
-
+local Slither = Trolling:CreateButton({
+   Name = "Slither.io (3 SECONDS)",
+   Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/snake",true))()
+	end,
+})
 
 RayField:LoadConfiguration()
