@@ -141,8 +141,11 @@ local Slither = Trolling:CreateButton({
 	end,
 })
 
-local Serverlist = Trolling:CreateButton({
-   Name = "Serverlist",
+local RMA = Window:CreateTab("Rate My Avatar")
+local RMAA = RMA:CreateSection("Rate My Avatar Page")
+
+local MSPaint = RMA:CreateButton({
+   Name = "Microsoft Paint",
    Callback = function()
 	loadstring(game:HttpGet("https://github.com/euronetic/b/blob/main/serverlist",true))()
 	end,
