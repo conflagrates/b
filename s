@@ -94,13 +94,12 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 })
 
 local Spam = Main:CreateButton({
-   Name = "Spam Diabolus",
+   Name = "Spam Emoji",
    Callback = function()
    while true do
- 
- local name = game:GetService("Players).Name
+   
    wait(1)
-   local A_1 = name.."😈"
+   local A_1 = "😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿👿👿😈👿😈😈😈😈😈👿😈😈"
    local A_2 = "All"
    local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
    Event:FireServer(A_1, A_2)
