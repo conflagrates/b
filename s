@@ -81,34 +81,8 @@ local Teleport = Main:CreateButton({
    end,
 })
 
-local Shittalk = Main:CreateButton({
-   Name = "Talk Shit",
-   Callback = function()
-   local args = {
-    [1] = "Man get yo rusty dusty musty crusty lookin like a florida-man, probably pan, you like kids so u an oldman, wannabe role model, goin for kids full throttle, drinking from a small bottle, monkey.",
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
-   end,
-})
-
-local Spam = Main:CreateButton({
-   Name = "Spam Emoji",
-   Callback = function()
-   while true do
-   
-   wait(1)
-   local A_1 = "😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿👿👿😈👿😈😈😈😈😈👿😈😈"
-   local A_2 = "All"
-   local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
-   Event:FireServer(A_1, A_2)
-   end
-   end,
-})
-
 local Run = Main:CreateButton({
-   Name = "Run (hold L-CTRL)",
+   Name = "Run (toggle L-CTRL)",
    Callback = function()
    local Character = game:GetService("Players").LocalPlayer.Character
       local Run = true
@@ -128,9 +102,34 @@ end)
    end,
 })
 
+local Shittalk = Main:CreateButton({
+   Name = "Talk Shit",
+   Callback = function()
+   local args = {
+    [1] = "Man get yo rusty dusty musty crusty lookin like a florida-man, probably pan, you like kids so u an oldman, wannabe role model, goin for kids full throttle, drinking from a small bottle, monkey.",
+    [2] = "All"
+}
 
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   end,
+})
 
-
+local Spam = Tab:CreateToggle({
+   Name = "Spam Emojis",
+   CurrentValue = false,
+   Flag = "Spam", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   while true do
+   
+   wait(1)
+   local A_1 = "😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿😈👿👿👿😈👿😈😈😈😈😈👿😈😈"
+   local A_2 = "All"
+   local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+   Event:FireServer(A_1, A_2)
+   end
+   Spam:Set(true)
+   end,
+})
 
 
 
