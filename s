@@ -143,4 +143,11 @@ local Slither = Trolling:CreateButton({
 	end,
 })
 
+local Headless = Trolling:CreateButton({
+   Name = "Headless (USE SMALL HEAD)",
+   Callback = function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/headless",true))()
+	end,
+})
+
 RayField:LoadConfiguration()
