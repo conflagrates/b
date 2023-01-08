@@ -20,10 +20,10 @@ local Window = Rayfield:CreateWindow({
       Title = "Diabolus | @lv#7305",
       Subtitle = "Key System",
       Note = "Join the discord (discord.gg/6uApH7VBmn)",
-      FileName = "Get Key",
+      FileName = "Enter Key",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "V8uHkA39lr8xY6Simgnq"
+      Key = "louis.v"
    }
 })
 
