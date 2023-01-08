@@ -81,6 +81,59 @@ local Teleport = Main:CreateButton({
    end,
 })
 
+local Shittalk = Main:CreateButton({
+   Name = "Talk Shit",
+   Callback = function()
+   local args = {
+    [1] = "Man get yo rusty dusty musty crusty lookin like a florida-man, probably pan, you like kids so u an oldman, wannabe role model, goin for kids full throttle, drinking from a small bottle, monkey.",
+    [2] = "All"
+}
+
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(unpack(args))
+   end,
+})
+
+local Spam = Main:CreateButton({
+   Name = "Spam Diabolus",
+   Callback = function()
+   while true do
+ 
+   wait(1)
+   local A_1 = "Diabolus 😈"
+   local A_2 = "All"
+   local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
+   Event:FireServer(A_1, A_2)
+   end
+   end,
+})
+
+local Run = Main:CreateButton({
+   Name = "Run (hold L-CTRL)",
+   Callback = function()
+   local Character = game:GetService("Players").LocalPlayer.Character
+      local Run = true
+      
+      local userInputService = game:GetService("UserInputService")
+      userInputService.InputBegan:Connect(function(R)
+	   if R.KeyCode == Enum.KeyCode.LeftControl then
+		if Run then
+			Run = false
+			Character.Humanoid.WalkSpeed = 76 --walk speed
+		else
+			Run = true
+			Character.Humanoid.WalkSpeed = 16
+		end
+	end
+end)
+   end,
+})
+
+
+
+
+
+
+
 
 
 RayField:LoadConfiguration()
