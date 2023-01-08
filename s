@@ -1,13 +1,14 @@
+getgenv().SecureMode = true
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "PornHub | lv#7305",
+   Name = "Diabolus | @lv#7305",
    LoadingTitle = "...",
    LoadingSubtitle = "made by Louis",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "PornHub"
+      FileName = "DiabolusHub"
    },
    Discord = {
       Enabled = false,
@@ -16,9 +17,9 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "👉👌",
+      Title = "Diabolus | @lv#7305",
       Subtitle = "Key System",
-      Note = "Join the discord (discord.gg/https://discord.gg/6uApH7VBmn)",
+      Note = "Join the discord (discord.gg/6uApH7VBmn)",
       FileName = "Gey Key",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -26,9 +27,30 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
+local Home = Window:CreateTab("Home", 4370345169)
+local HomeArea = Home:CreateSection("Homepage")
 
-
-
+local Main = Window:CreateTab("Main", 4483346361)
+local MainSection = Main:CreateSection("Mainpage")
+local Button = Home:CreateButton({
+   Name = "Discord",
+   Callback = function()
+   Rayfield:Notify({
+   Title = "Join The Discord!",
+   Content = "discord.gg/6uApH7VBmn",
+   Duration = 6.5,
+   Image = 4384404017,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Alr",
+         Callback = function()
+         print("brodie said alr lmaoooo")
+      end
+   },
+},
+})
+   end,
+})
 
 
 
