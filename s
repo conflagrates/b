@@ -8,7 +8,7 @@ local Window = Rayfield:CreateWindow({
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "DiabolusHub"
+      FileName = "Diabolus"
    },
    Discord = {
       Enabled = false,
@@ -20,29 +20,34 @@ local Window = Rayfield:CreateWindow({
       Title = "Diabolus | @lv#7305",
       Subtitle = "Key System",
       Note = "Join the discord (discord.gg/6uApH7VBmn)",
-      FileName = "Gey Key",
+      FileName = "Get Key",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = "V8uHkA39lr8xY6Simgnq"
    }
 })
 
+Rayfield:Notify({
+   Title = "Diabolus Unlocked",
+   Content = ".gg/6uApH7VBmn",
+   Duration = 3.0,
+   Image = 3610242116,
+})
+
+
 local Home = Window:CreateTab("Home", 4370345169)
 local HomeArea = Home:CreateSection("Homepage")
-
-local Main = Window:CreateTab("Main", 4483346361)
-local MainSection = Main:CreateSection("Mainpage")
-local Button = Home:CreateButton({
+local HomeButton = Home:CreateButton({
    Name = "Discord",
    Callback = function()
    Rayfield:Notify({
-   Title = "Join The Discord!",
+   Title = "Get Your Key!",
    Content = "discord.gg/6uApH7VBmn",
-   Duration = 6.5,
+   Duration = 6.0,
    Image = 4384404017,
    Actions = { -- Notification Buttons
       Ignore = {
-         Name = "Alr",
+         Name = "alr",
          Callback = function()
          print("brodie said alr lmaoooo")
       end
@@ -51,6 +56,10 @@ local Button = Home:CreateButton({
 })
    end,
 })
+
+local Main = Window:CreateTab("Main", 4483346361)
+local MainSection = Main:CreateSection("Mainpage")
+
 
 
 
