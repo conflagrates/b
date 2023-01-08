@@ -132,7 +132,7 @@ local Spam = Main:CreateToggle({
    end
    end
    if Spam == true then
-   Spam == false
+   Spam = false
    end
    end,
 })
