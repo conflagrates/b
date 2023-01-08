@@ -114,7 +114,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
    end,
 })
 
-local Spam = Tab:CreateToggle({
+local Spam = Main:CreateToggle({
    Name = "Spam Emojis",
    CurrentValue = false,
    Flag = "Spam", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
