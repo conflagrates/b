@@ -123,6 +123,13 @@ local Idle = Main:CreateButton({
 	end,
 })
 
+local Bypass = Main:CreateButton({
+   Name = "Chat Bypasser (Q)",
+   Callback = function()
+ 	 _G.Keybind = 'Q'
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser",true))()
+	end,
+})
 
 
 
