@@ -59,7 +59,12 @@ local HomeButton = Home:CreateButton({
 
 local Main = Window:CreateTab("Main", 4483346361)
 local MainSection = Main:CreateSection("Mainpage")
-
+local MButton1 = Tab:CreateButton({
+   Name = "Fly (G to toggle)",
+   Callback = function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/8uzbykJb", true))()
+   end,
+})
 
 
 
