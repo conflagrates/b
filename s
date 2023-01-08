@@ -3,7 +3,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shle
 
 local Window = Rayfield:CreateWindow({
    Name = "Diabolus | @lv#7305",
-   LoadingTitle = "...",
+   LoadingTitle = "Diabolus | Loading",
    LoadingSubtitle = "made by Louis",
    ConfigurationSaving = {
       Enabled = true,
@@ -28,23 +28,21 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "Diabolus Unlocked",
+   Title = "Diabolus Loaded",
    Content = ".gg/6uApH7VBmn",
    Duration = 3.0,
-   Image = 3610242116,
 })
 
 
-local Home = Window:CreateTab("Home", 4370345169)
+local Home = Window:CreateTab("Home")
 local HomeArea = Home:CreateSection("Homepage")
-local HomeButton = HomeArea:CreateButton({
+local HomeButton = Home:CreateButton({
    Name = "Discord",
    Callback = function()
    Rayfield:Notify({
    Title = "Get Your Key!",
    Content = "discord.gg/6uApH7VBmn",
    Duration = 6.0,
-   Image = 4384404017,
    Actions = { -- Notification Buttons
       Ignore = {
          Name = "alr",
@@ -57,9 +55,9 @@ local HomeButton = HomeArea:CreateButton({
    end,
 })
 
-local Main = Window:CreateTab("Main", 4483346361)
-local MainSection = Main:CreateSection("Mainpage")
-local MButton1 = MainSection:CreateButton({
+local Main = Window:CreateTab("Main")
+local MainArea = Main:CreateSection("Mainpage")
+local Fly = Main:CreateButton({
    Name = "Fly (G to toggle)",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/8uzbykJb", true))()
