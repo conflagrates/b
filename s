@@ -57,10 +57,27 @@ local HomeButton = Home:CreateButton({
 
 local Main = Window:CreateTab("Main")
 local MainArea = Main:CreateSection("Mainpage")
+
 local Fly = Main:CreateButton({
    Name = "Fly (G to toggle)",
    Callback = function()
    loadstring(game:HttpGet("https://pastebin.com/raw/8uzbykJb", true))()
+   end,
+})
+
+local Teleport = Main:CreateButton({
+   Name = "Click Teleport (Tool)",
+   Callback = function()
+      mouse = game.Players.LocalPlayer:GetMouse()
+      tool = Instance.new("Tool")
+      tool.RequiresHandle = false
+      tool.Name = "Click Teleport"
+      tool.Activated:connect(function()
+      local ps = mouse.Hit+Vector3.new(0,2.5,0)
+      ps = CFrame.new(ps.X,ps.Y,ps.Z)
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = ps
+      end)
+      tool.Parent = game.Players.LocalPlayer.Backpack
    end,
 })
 
