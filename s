@@ -119,6 +119,8 @@ local Spam = Main:CreateToggle({
    CurrentValue = false,
    Flag = "Spam", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
+   Spam:Set(true)
+   if Spam == true then
    while true do
    
    wait(1)
@@ -127,7 +129,7 @@ local Spam = Main:CreateToggle({
    local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
    Event:FireServer(A_1, A_2)
    end
-   Spam:Set(true)
+   end
    end,
 })
 
