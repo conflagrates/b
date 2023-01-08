@@ -124,7 +124,7 @@ local Idle = Main:CreateButton({
 })
 
 local Trolling = Window:CreateTab("Trolling")
-local TrollArea = Trolling:CreateSection("Trollpage")
+local Bypasses = Trolling:CreateSection("Bypasses")
 
 local Bypass = Trolling:CreateButton({
    Name = "Chat Bypasser (Q)",
@@ -134,20 +134,12 @@ local Bypass = Trolling:CreateButton({
 	end,
 })
 
+local FEScripts = Trolling:CreateSection("FE Scripts")
+
 local Slither = Trolling:CreateButton({
    Name = "Slither.io (3 SECONDS)",
    Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/snake",true))()
-	end,
-})
-
-local RMA = Window:CreateTab("Rate My Avatar")
-local RMAA = RMA:CreateSection("Rate My Avatar Page")
-
-local MSPaint = RMA:CreateButton({
-   Name = "Microsoft Paint",
-   Callback = function()
-	loadstring(game:HttpGet("https://github.com/euronetic/b/blob/main/serverlist",true))()
 	end,
 })
 
