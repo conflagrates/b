@@ -150,10 +150,17 @@ local Soccer = Trolling:CreateButton({
 	end,
 })
 
-local Headless = Trolling:CreateButton({
-   Name = "Headless (USE SMALL HEAD)",
+local Amogus = Trolling:CreateButton({
+   Name = "Amogus",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/headless",true))()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/amogus"))()
+	end,
+})
+
+local Suicide = Trolling:CreateButton({
+   Name = "Neck Snap (R6)",
+   Callback = function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/Neck%20Snap"))()
 	end,
 })
 
