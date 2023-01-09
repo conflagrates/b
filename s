@@ -136,10 +136,17 @@ local Bypass = Trolling:CreateButton({
 
 local FEScripts = Trolling:CreateSection("FE Scripts")
 
-local Slither = Trolling:CreateButton({
-   Name = "Slither.io (3 SECONDS)",
+local Snake = Trolling:CreateButton({
+   Name = "Snake (3 SECONDS)",
    Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/snake",true))()
+	end,
+})
+
+local Soccer = Trolling:CreateButton({
+   Name = "World Cup (ANY 6 HATS)",
+   Callback = function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/Soccer%20Ball"))()
 	end,
 })
 
