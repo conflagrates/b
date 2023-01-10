@@ -137,30 +137,37 @@ local Bypass = Trolling:CreateButton({
 local FEScripts = Trolling:CreateSection("FE Scripts")
 
 local Snake = Trolling:CreateButton({
-   Name = "Snake (3 SECONDS)",
+   Name = "R6 Snake",
    Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/snake",true))()
 	end,
 })
 
 local Soccer = Trolling:CreateButton({
-   Name = "World Cup (ANY 6 HATS)",
+   Name = "R6 World Cup (ANY 6 HATS)",
    Callback = function()
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/Soccer%20Ball"))()
 	end,
 })
 
 local Amogus = Trolling:CreateButton({
-   Name = "Amogus",
+   Name = "R6 Amogus",
    Callback = function()
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/amogus"))()
 	end,
 })
 
 local Suicide = Trolling:CreateButton({
-   Name = "Neck Snap (R6)",
+   Name = "R6 Neck Snap",
    Callback = function()
 	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/Neck%20Snap"))()
+	end,
+})
+
+local Marble = Trolling:CreateButton({
+   Name = "R6 Marble",
+   Callback = function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Razzer35/a/main/Marble"))()
 	end,
 })
 
