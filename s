@@ -146,7 +146,7 @@ local Snake = Trolling:CreateButton({
 local PlanePlane = Trolling:CreateButton({
    Name = "R6 Toy Plane",
    Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/aran1910/dsaa/main/script))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/euronetic/b/main/toy%20plane",true))()
 	end,
 })
 
