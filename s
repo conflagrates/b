@@ -179,7 +179,7 @@ local Krystal = Trolling:CreateButton({
 })
 
 local ToyPlane = Trolling:CreateButton({
-   Name = "R6 Remote Control Toy Plane",
+   Name = "R6 ToyPlane",
    Callback = function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/aran1910/dsaa/main/script%22))()
 	end,
