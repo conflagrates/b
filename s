@@ -171,4 +171,11 @@ local Marble = Trolling:CreateButton({
 	end,
 })
 
+local Krystal = Trolling:CreateButton({
+   Name = "R6 Krystal Dance",
+   Callback = function()
+	loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/e51327540d1ba5ede244c459dbdb5a0e/raw/6320fe344ac51a311ef7c9f8d5c3924b1a7c3969/Krystal%2520Dance'))()
+	end,
+})
+
 RayField:LoadConfiguration()
