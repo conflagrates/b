@@ -171,13 +171,6 @@ local Marble = Trolling:CreateButton({
 	end,
 })
 
-local ToyPlane = Trolling:CreateButton({
-   Name = "R6 ToyPlane",
-   Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/aran1910/dsaa/main/script))()
-	end,
-})
-
 local Krystal = Trolling:CreateButton({
    Name = "R15 & R6 Krystal Dance (PRESS F9)",
    Callback = function()
