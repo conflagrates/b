@@ -185,6 +185,13 @@ local AllSeeingScythe = Trolling:CreateButton({
 	end,
 })
 
+local Dog = Trolling:CreateButton({
+   Name = "R6 Dog",
+   Callback = function()
+	loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/euronetic/b/main/dog"))()
+	end,
+})
+
 local Krystal = Trolling:CreateButton({
    Name = "R15 & R6 Krystal Dance (PRESS F9)",
    Callback = function()
