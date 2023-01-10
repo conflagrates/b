@@ -178,13 +178,6 @@ local Krystal = Trolling:CreateButton({
 	end,
 })
 
-local ToyPlane = Trolling:CreateButton({
-   Name = "R6 ToyPlane",
-   Callback = function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/aran1910/dsaa/main/script))()
-	end,
-})
-
 
 
 RayField:LoadConfiguration()
